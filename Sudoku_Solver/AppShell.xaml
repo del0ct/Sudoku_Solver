@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Sudoku_Solver.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Sudoku_Solver"
+             Title="Sudoku"
+             IconImageSource="icon.ico">
+
+        <FlyoutItem Title="Solver">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab> 
+    </FlyoutItem>
+    <FlyoutItem Title="About">
+        <Tab>
+            <ShellContent Title="About" ContentTemplate="{DataTemplate local:AboutPage}"/>
+        </Tab>
+    </FlyoutItem>
+</Shell>
