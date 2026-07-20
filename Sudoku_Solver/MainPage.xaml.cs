@@ -1,12 +1,6 @@
-﻿//using Microsoft.UI.Xaml.Controls;
-//using Microsoft.UI.Xaml.Input;
-
-using CommunityToolkit.Maui.Alerts;
+﻿using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
 using Microsoft.Maui.Graphics.Text;
-//using Microsoft.UI.System;
-//using Microsoft.UI.Xaml;
-//using static System.Net.Mime.MediaTypeNames;
 
 namespace Sudoku_Solver
 {

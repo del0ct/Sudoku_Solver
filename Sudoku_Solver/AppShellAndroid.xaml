@@ -4,17 +4,18 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Sudoku_Solver"
+             xmlns:locs="clr-namespace:Sudoku_Solver.Resources.Localisation"
              Title="Sudoku"
              IconImageSource="icon.ico">
 
-        <FlyoutItem Title="Solver">
+        <FlyoutItem Title="{x:Static locs:String.solver}">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate local:AndroidSolverPage}"/>
         </Tab> 
     </FlyoutItem>
-    <FlyoutItem Title="About">
+    <FlyoutItem Title="{x:Static locs:String.about}">
         <Tab>
-            <ShellContent Title="About" ContentTemplate="{DataTemplate local:AboutPage}"/>
+            <ShellContent Title="{x:Static locs:String.about}" ContentTemplate="{DataTemplate local:AboutPage}"/>
         </Tab>
     </FlyoutItem>
 </Shell>

@@ -1,9 +1,4 @@
-﻿//using Microsoft.UI.Xaml.Controls;
-//using Microsoft.UI.Xaml.Input;
-
-//using Android.Widget;
-
-using CommunityToolkit.Maui.Alerts;
+﻿using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
 
 namespace Sudoku_Solver

@@ -1,9 +1,12 @@
-﻿using System;
-
-public class ExternalFunction
+﻿public class ExternalFunction
 {
+    private bool Error_check(int[] tester)
+    {
+        return true;
+    }
     public int[] Solve(int[] str)
     {
+        
         int[] end = new int[82];
         Array.Copy(str, end, str.Length);
         bool back = false;
