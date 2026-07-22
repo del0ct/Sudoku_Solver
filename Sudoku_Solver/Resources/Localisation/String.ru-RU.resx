@@ -120,8 +120,14 @@
   <data name="about" xml:space="preserve">
     <value>Описание</value>
   </data>
+  <data name="cellerr" xml:space="preserve">
+    <value>Ошибка в клетке(ах):</value>
+  </data>
   <data name="erase" xml:space="preserve">
     <value>Стереть</value>
+  </data>
+  <data name="error" xml:space="preserve">
+    <value>Ошибка</value>
   </data>
   <data name="git" xml:space="preserve">
     <value>Все мои проекты на GitHub</value>
@@ -131,10 +137,22 @@
 на GitHub
 для Windows и Android</value>
   </data>
+  <data name="noapp" xml:space="preserve">
+    <value>Нет подходящего приложения</value>
+  </data>
+  <data name="ok" xml:space="preserve">
+    <value>Ок</value>
+  </data>
   <data name="solve" xml:space="preserve">
     <value>Решить</value>
   </data>
   <data name="solver" xml:space="preserve">
     <value>Решатель</value>
+  </data>
+  <data name="unsolvable" xml:space="preserve">
+    <value>Задача не решаема</value>
+  </data>
+  <data name="version Text" xml:space="preserve">
+    <value>Версия</value>
   </data>
 </root>

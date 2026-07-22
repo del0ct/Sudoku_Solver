@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net9.0-android</TargetFrameworks>
@@ -27,7 +27,7 @@
 		<ApplicationId>ru.del0ct.sudokusolver</ApplicationId>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationDisplayVersion>0.6</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
 
 		<!-- To develop, package, and publish an app to the Microsoft Store, see: https://aka.ms/MauiTemplateUnpackaged -->
@@ -36,32 +36,42 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">29.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
-		<PackageIcon>andrsol.png</PackageIcon>
+		<PackageIcon></PackageIcon>
 		<NeutralLanguage>en</NeutralLanguage>
+		<AssemblyName>Sudoku Solver</AssemblyName>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android|AnyCPU'">
 	  <ApplicationTitle>Sudoku Solver</ApplicationTitle>
-	  <ApplicationId>ru.del0ct.sudokusv</ApplicationId>
+	  <ApplicationId>ru.del0ct.sudokusolver</ApplicationId>
+	  <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+	  <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-windows10.0.19041.0|AnyCPU'">
 	  <ApplicationTitle>Sudoku Solver</ApplicationTitle>
-	  <ApplicationId>ru.del0ct.sudokusv</ApplicationId>
+	  <ApplicationId>ru.del0ct.sudokusolver</ApplicationId>
+	  <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+	  <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android|AnyCPU'">
 	  <ApplicationTitle>Sudoku Solver</ApplicationTitle>
-	  <ApplicationId>ru.del0ct.sudokusv</ApplicationId>
+	  <ApplicationId>ru.del0ct.sudokusolver</ApplicationId>
+	  <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+	  <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-windows10.0.19041.0|AnyCPU'">
 	  <ApplicationTitle>Sudoku Solver</ApplicationTitle>
-	  <ApplicationId>ru.del0ct.sudokusv</ApplicationId>
+	  <ApplicationId>ru.del0ct.sudokusolver</ApplicationId>
+	  <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+	  <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\andrsol.svg" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#151515" BaseSize="456,456" />
@@ -74,9 +84,6 @@
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
-	</ItemGroup>
-	<ItemGroup>
-	  <MauiIcon Include="Resources\AppIcon\andrsol.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -110,10 +117,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="Resources\AppIcon\andrsol.png">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
 	  <None Update="Resources\Images\andrsolver.png">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>

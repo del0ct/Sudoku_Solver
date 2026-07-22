@@ -70,11 +70,29 @@ namespace Sudoku_Solver.Resources.Localisation {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Error in cell(&apos;s):.
+        /// </summary>
+        internal static string cellerr {
+            get {
+                return ResourceManager.GetString("cellerr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Erase.
         /// </summary>
         internal static string erase {
             get {
                 return ResourceManager.GetString("erase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Error.
+        /// </summary>
+        internal static string error {
+            get {
+                return ResourceManager.GetString("error", resourceCulture);
             }
         }
         
@@ -99,6 +117,24 @@ namespace Sudoku_Solver.Resources.Localisation {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на No accepted app.
+        /// </summary>
+        internal static string noapp {
+            get {
+                return ResourceManager.GetString("noapp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ok.
+        /// </summary>
+        internal static string ok {
+            get {
+                return ResourceManager.GetString("ok", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Solve.
         /// </summary>
         internal static string solve {
@@ -113,6 +149,24 @@ namespace Sudoku_Solver.Resources.Localisation {
         internal static string solver {
             get {
                 return ResourceManager.GetString("solver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на An unsolvable task.
+        /// </summary>
+        internal static string unsolvable {
+            get {
+                return ResourceManager.GetString("unsolvable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Version.
+        /// </summary>
+        internal static string version_Text {
+            get {
+                return ResourceManager.GetString("version Text", resourceCulture);
             }
         }
     }

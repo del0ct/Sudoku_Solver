@@ -120,8 +120,14 @@
   <data name="about" xml:space="preserve">
     <value>About</value>
   </data>
+  <data name="cellerr" xml:space="preserve">
+    <value>Error in cell('s):</value>
+  </data>
   <data name="erase" xml:space="preserve">
     <value>Erase</value>
+  </data>
+  <data name="error" xml:space="preserve">
+    <value>Error</value>
   </data>
   <data name="git" xml:space="preserve">
     <value>See all my project on GitHub</value>
@@ -131,10 +137,22 @@
 on GitHub
 for Windows and Android</value>
   </data>
+  <data name="noapp" xml:space="preserve">
+    <value>No accepted app</value>
+  </data>
+  <data name="ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
   <data name="solve" xml:space="preserve">
     <value>Solve</value>
   </data>
   <data name="solver" xml:space="preserve">
     <value>Solver</value>
+  </data>
+  <data name="unsolvable" xml:space="preserve">
+    <value>An unsolvable task</value>
+  </data>
+  <data name="version Text" xml:space="preserve">
+    <value>Version</value>
   </data>
 </root>
