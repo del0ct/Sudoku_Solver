@@ -88,6 +88,15 @@ namespace Sudoku_Solver.Resources.Localisation {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Eraser.
+        /// </summary>
+        internal static string eraser {
+            get {
+                return ResourceManager.GetString("eraser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Error.
         /// </summary>
         internal static string error {

@@ -3,7 +3,7 @@ using Java.Nio.Channels;
 using Microsoft.Maui.Controls.PlatformConfiguration;
 #endif
 
-using locoliz = Sudoku_Solver.Resources.Localisation.String;
+using Locoliz = Sudoku_Solver.Resources.Localisation.String;
 namespace Sudoku_Solver
 {
     public class ExternalFunction
@@ -132,7 +132,7 @@ namespace Sudoku_Solver
         }
         public static async void Error_Alert()
         {
-            await Application.Current.Windows[0].Page.DisplayAlert(locoliz.error, locoliz.unsolvable, locoliz.ok);
+            await Application.Current.Windows[0].Page.DisplayAlert(Locoliz.error, Locoliz.unsolvable, Locoliz.ok);
         }
     }
 }

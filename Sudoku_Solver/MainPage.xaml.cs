@@ -2,7 +2,7 @@
 using CommunityToolkit.Maui.Core;
 using Microsoft.Maui.Graphics.Text;
 
-using locoliz = Sudoku_Solver.Resources.Localisation.String;
+using Locoliz = Sudoku_Solver.Resources.Localisation.String;
 
 namespace Sudoku_Solver
 {
@@ -65,7 +65,7 @@ namespace Sudoku_Solver
             }
             if (Error_Data)
             {
-                await DisplayAlert(locoliz.error, locoliz.cellerr + " " + String.Join(", ", errcels), locoliz.ok);
+                await DisplayAlert(Locoliz.error, Locoliz.cellerr + " " + String.Join(", ", errcels), Locoliz.ok);
             }
             else
             {

@@ -126,6 +126,9 @@
   <data name="erase" xml:space="preserve">
     <value>Erase</value>
   </data>
+  <data name="eraser" xml:space="preserve">
+    <value>Eraser</value>
+  </data>
   <data name="error" xml:space="preserve">
     <value>Error</value>
   </data>

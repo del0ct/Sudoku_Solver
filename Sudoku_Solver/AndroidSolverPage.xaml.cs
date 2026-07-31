@@ -1,12 +1,17 @@
-﻿using CommunityToolkit.Maui.Alerts;
+﻿#if ANDROID
+using AndroidX.Core.Widget;
+using Java.Lang;
+#endif
+using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
+using System.Collections;
 
 namespace Sudoku_Solver
 {
     public partial class AndroidSolverPage : ContentPage
     {
         private Button[] tb = new Button[82];
-        public string ChecktNum;
+        public int ChecktNum = 1;
 
         public Button[] Tb { get => tb; set => tb = value; }
         public AndroidSolverPage()
@@ -22,7 +27,12 @@ namespace Sudoku_Solver
                 Tb[i].Clicked += OnCellClicked;
             }
         }
-
+        protected override void OnSizeAllocated(double width, double height)
+        {
+            base.OnSizeAllocated(width, height);
+            int w = (int)double.Round(AppShell.Current.Window.Width) / 10;
+            LabelSudoku.FontSize = w;
+        }
         private void Erase_Clicked(object? sender, EventArgs e)
         {
             for (int i = 1; i <= 81; i++)
@@ -31,7 +41,7 @@ namespace Sudoku_Solver
         }
         private void OnCellClicked(object? sender, EventArgs e) 
         {
-            (sender as Button).Text = ChecktNum is "Eraser" ? "" : ChecktNum;
+            (sender as Button).Text = ChecktNum is 0 ? "" : ChecktNum.ToString();
         }
         private void Solve_Clicked(object sender, EventArgs e)
         {
@@ -49,9 +59,20 @@ namespace Sudoku_Solver
                     Tb[i].Text = str[i].ToString();
         }
 
-        private void NumCheckedChanged(object sender, CheckedChangedEventArgs e)
+        private void NumCheckedChanged(object sender, EventArgs e)
         {   
-            ChecktNum = (sender as RadioButton).Content.ToString();
+            num1.Background = Colors.Gray;
+            num2.Background = Colors.Gray;
+            num3.Background = Colors.Gray;
+            num4.Background = Colors.Gray;
+            num5.Background = Colors.Gray;
+            num6.Background = Colors.Gray;
+            num7.Background = Colors.Gray;
+            num8.Background = Colors.Gray;
+            num9.Background = Colors.Gray;
+            num0.Background = Colors.Gray;
+            if (!int.TryParse((sender as Button).Text, out ChecktNum)) ChecktNum = 0;
+            (sender as Button).Background = Colors.BlueViolet;
         }
     }
 }
